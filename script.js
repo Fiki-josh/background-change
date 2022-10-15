@@ -22,12 +22,10 @@ var change_color = document.getElementById("favcolor");
 var chang_color = document.getElementById("facolor");
 
 change_color.addEventListener("input",function(){
-    //alert(change_color.value);
     document.getElementById("hex-code").innerHTML=change_color.value +", "+chang_color.value;
     document.getElementsByTagName("body")[0].style.background= "linear-gradient(to right, " +change_color.value + ", "+ chang_color.value + ")";
 });
 chang_color.addEventListener("input",function(){
-    //alert(chang_color.value);
     document.getElementById("hex-code").innerHTML=change_color.value +", "+chang_color.value;
     document.getElementsByTagName("body")[0].style.background= "linear-gradient(to right, " +change_color.value + ", "+ chang_color.value + ")";
 });
